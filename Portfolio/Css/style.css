@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    font-family:monospace;
+    background: #14152c;
+    color: #fdfdfd;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    gap:20px
+}
+
+header h1 {
+    font-size: 24px;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cfcdcd;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #0077ff;
+}
+
+/* hero section */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:40px;
+    padding: 40px 0;
+}
+
+.intro {
+    flex:1;
+    min-width: 0;
+    width: 50%;
+    font-size: 24px;
+    margin-top: 15px;
+}
+.intro p{
+    font-size: 16px;
+}
+.profile {
+    flex:1;
+    min-width: 0;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    height: 60px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    font-size: 14px;
+}
+/* Projects */
+
+.ProjectContainer{
+    min-height: 50vh;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 230px;
+    box-shadow:  10px 10px 20px 10px rgba(172, 171, 171, 0.15);
+
+    display: grid;
+    justify-items: center;
+    align-content: center;
+
+}
+.Project{
+    text-align: center;
+    color: green;
+}
+.Project::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #c9a227;
+    margin: 5px auto 0;
+    border-radius: 2px;
+}
+
+.About-Me{
+    display: flex;
+    min-height: 50vh;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 100px;
+}
+.Contact{
+    display: flex;
+    min-height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container1{
+    border: 1px solid white;
+    max-width:100%;
+    width: 300px;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 3px 0px;
+}
+.container1 p{
+    font-size: 13px;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+/* Custom dark mode overrides for form controls */
+.container2 .form-control {
+    background-color: #1b1c36;
+    border: 1px solid #333456;
+    color: #fdfdfd;
+}
+
+.container2 .form-control:focus {
+    background-color: #1b1c36;
+    border-color: #0077ff;
+    color: #fdfdfd;
+    box-shadow: 0 0 0 0.25rem rgba(0, 119, 255, 0.25);
+}
+
+.container2 label {
+    color: #fdfdfd;
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+/* Textarea specific override */
+.container2 textarea.form-control {
+    min-height: 150px;
+}
+
+/* Styled Submit Button */
+.submit-btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #005bb5;
+}
+.Contact-btn:hover {
+    background-color: #005bb5;
+}
+.Resume-btn:hover {
+    background-color: #005bb5;
+}
+
+.Contact-btn{
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.Resume-btn{
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0077ff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.fb-link {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.tiktok-link {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1b1c36; /* Matches your form inputs background */
+    color: #fdfdfd;
+    border: 1px solid #333456;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #0077ff; /* Changes color when hovered */
+    color: #ffffff;
+    transform: translateY(-3px); /* Slight lift effect */
+    border-color: #0077ff;
+}
+.container-links{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* =========================
+   TABLETS: 768px and below
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Make the outer container wider */
+    .portfolio-container {
+        width: 92%;
+    }
+
+    /* Allow navigation to wrap */
+    header {
+        flex-wrap: wrap;
+        padding: 15px 0;
+        height: auto;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    /* Stack the introduction and image */
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+        min-height: auto;
+        padding: 60px 0;
+    }
+
+    .intro,
+    .profile {
+        width: 100%;
+        flex: auto;
+    }
+
+    .profile img {
+        max-width: 280px;
+    }
+
+    /* Center the social media icons */
+    .container-links {
+        justify-content: center;
+    }
+
+    /* About section */
+    .About-Me {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .About-Me p {
+        line-height: 1.8;
+    }
+
+    /* Stack contact information and form */
+    .Contact {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 30px;
+        padding: 40px 0;
+    }
+
+    .container1,
+    .container2 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        min-height: 60px;
+        height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+}
+
+
+/* =========================
+   PHONES: 480px and below
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .portfolio-container {
+        width: 94%;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 40px 0;
+    }
+
+    .intro {
+        font-size: 20px;
+    }
+
+    .intro h1 {
+        font-size: 28px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .profile img {
+        max-width: 230px;
+    }
+
+    .Contact-btn,
+    .Resume-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
+    .About-Me h1 {
+        font-size: 26px;
+    }
+
+    .About-Me p {
+        font-size: 14px;
+    }
+
+    .container1 {
+        padding: 20px;
+    }
+
+    .container2 {
+        padding: 0;
+    }
+
+    footer {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}

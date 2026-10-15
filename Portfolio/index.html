@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>I.A</h1>
+
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#About-Me">About</a>
+                <a href="#Contact">Contact</a>
+                <a href="#">Projects</a>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <section class="hero">
+
+                <div class="intro">
+                    <h1>Hi! I'm Iverson.</h1>
+
+                    <p>
+                        BSIT student aspiring to be an IT professional passionate about
+                        technology, problem-solving, and anything related
+                        with tech.
+                    </p>
+                    <div class="container-links">
+                    <div class="fb-link">
+                        <a href="https://www.facebook.com/piolopascualph/" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="tiktok-link">
+                        <a href="https://www.tiktok.com/@piolo_pascual?lang=en" target="_blank" rel="noopener noreferrer" class="social-icon">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <button class="Contact-btn">Contact</button>
+                    <button class="Resume-btn">View Resume</button>
+        
+                </div>
+
+                <div class="profile">
+                    <img src="images/20260814_140553.jpg" alt="Profile Image">
+                </div>
+
+            </section><hr>
+
+            <section class="About-Me" id="About-Me">
+                <h1>About Me</h1><br>
+                <p>I'm an IT student who is continuously learning and improving my technical skills.
+                     I enjoy configuring network devices, exploring networking technologies,
+                     and troubleshooting technical problems. My goal is to become a Network Engineer and build a
+                      strong foundation in network configuration, administration, and security.</p>
+            </section><hr>
+
+            <section class="Contact" id="Contact">
+                <div class="container1">
+                    <h2>Address</h2>
+                    <p>Okinawa, Japan</p>
+                    <h2>Phone</h2>
+                    <p>+6391-2345-678</p>
+                    <h2>Email</h2>
+                    <p>agnapan@gmail.com</p>
+
+                </div>
+                <form class="container2">
+                    <!-- Row for Name and Email side-by-side using Bootstrap grid -->
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Name:</label>
+                            <input type="text" id="name" class="form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject:</label>
+                        <input type="text" id="subject" class="form-control">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea name="message" id="message" class="form-control"></textarea><br>
+                    </div>
+
+                    <!-- Submit Button Centered -->
+                    <div class="text-center">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+
+
+                </div>
+
+
+            </section>
+
+
+
+        </main>
+
+
+        <footer>
+            <p>&copy; Iverson F. Agnapan | BSIT | Mountain Province State University</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
